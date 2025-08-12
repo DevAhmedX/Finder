@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Finder</title>
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle">☰</div>
+
+            <div class="mobile-menu">
+                <span class="close-btn">×</span>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Listings</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Components</a></li>
+                </ul>
+            </div>
+            
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" class="logo_img">Finder
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Components</a></li>
+        </ul>
+
+        <div class="left_side">
+            <div class="icons">
+                <a href="#" class="theme"><i class="fa-solid fa-sun"></i></a>
+                <a href="#" class="accont"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <div class="red_button">
+                + Join <span>Pro Network</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- زرار Customize -->
+    <div class="customize-btn" id="customize-btn">
+    <span>Customize</span>
+    </div>
+
+    <!-- البانل الجانبي -->
+    <div class="sideBar">
+        <div class="sideBar hidden" id="sidebarContent">
+            <div class="header">
+                <h2>Customize theme</h2>
+                <span class="close-btn" id="close-btn">&times;</span>
+            </div>
+
+            <div class="section-title">Colors</div>
+            <div class="colors">
+                <div class="color-item">
+                    <div class="color-code">#d85151</div>
+                    <div class="color-circle" style="background: #d85151;"></div>
+                    <small>Primary</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-code">#33b36l</div>
+                    <div class="color-circle" style="background: #33b36b;"></div>
+                    <small>Success</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-code">#fc9231</div>
+                    <div class="color-circle" style="background: #fc9231;"></div>
+                    <small>Warning</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-code">#f03d3d</div>
+                    <div class="color-circle" style="background: #f03d3d;"></div>
+                    <small>Danger</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-code">#3d7a81</div>
+                    <div class="color-circle" style="background: #3d7a81;"></div>
+                    <small>Info</small>
+                </div>
+            </div>
+
+            <div class="section-title">Direction</div>
+            <div class="direction">
+                <div class="toggle">
+                    <label>RTL</label>
+                    <input type="checkbox" id="rtlToggle">
+                </div>
+                <div class="info-box">
+                    To switch the text direction of your webpage from LTR to RTL, please consult the detailed instructions provided in the relevant section of our documentation.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main_layout"></div>
+
+    <header>
+        <div class="header_content">
+            <h1 class="header_title">Explore top-rated certified pros nearby</h1>
+            <form class="search_form">
+                <input type="text" placeholder="What service do you need?" class="search_input">
+                <input type="text" placeholder="Zip code" class="location_input">
+                <button type="submit" class="red_button">Search</button>
+            </form>
+            <ul class="search_example">
+                <li><a href="#">Handyperson</a></li>
+                <li><a href="#">Electrician</a></li>
+                <li><a href="#">Plumbing</a></li>
+                <li><a href="#">Landscaping</a></li>
+                <li><a href="#">Roofing</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section class="pros_section">
+            <div class="main_title">
+                <h2 class="title">Browse pros in your area</h2>
+                <a href="#" class="viewAll">View all</a>
+            </div>
+
+            <section class="types">
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type1.svg" alt="#" class="types_img">
+                        <span>Flooring</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type2.svg" alt="#" class="types_img">
+                        <span>Concrete</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type3.svg" alt="#" class="types_img">
+                        <span>Cleaning</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type4.svg" alt="#" class="types_img">
+                        <span>Handyperson</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type5.svg" alt="#" class="types_img">
+                        <span>Painting</span>   
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type6.svg" alt="#" class="types_img">
+                        <span>Plumbing</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type7.svg" alt="#" class="types_img">
+                    <span>Pest control</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type8.svg" alt="#" class="types_img">
+                        <span>Heating & furnace</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type9.svg" alt="#" class="types_img">
+                        <span>Electrician</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type10.svg" alt="#" class="types_img">
+                        <span>Roofing</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type11.svg" alt="#" class="types_img">
+                        <span>Carpentry</span>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <img src="images/type12.svg" alt="#" class="types_img">
+                        <span>Landscaping</span>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <section class="near_u">
+            <div class="near_left">
+                <h3>Get matched with local pros</h3>
+                <span>for your next home project</span>
+                <img src="images/layout.svg" alt="#" class="near_u_shape">
+                <img src="images/home.png" alt="#" class="near_u_img">
+            </div>
+
+            <section class="near_right">
+                <div class="main_title">
+                    <h2 class="title">Popular projects near you</h2>
+                    <a href="#" class="viewAll">View all</a>
+                </div>
+
+                <div class="pop_projects">
+                    <div class="pop_project">
+                        <div class="left">
+                            <img src="images/pop1.jpg" alt="#" class="pop_project_img">
+                        </div>
+                        <div class="right">
+                            <h4>Decks & porches</h4>
+                            <h5><i class="fa-solid fa-star"></i>4.7 <span>(95) </span>  From $1,890</h5>
+                        </div>
+                    </div>
+                    <div class="pop_project">
+                        <div class="left">
+                            <img src="images/pop2.jpg" alt="#" class="pop_project_img">
+                        </div>
+                        <div class="right">
+                            <h4>Roof repair</h4>
+                            <h5><i class="fa-solid fa-star"></i>4.5 <span>(48) </span>  From $1,120</h5>
+                        </div>
+                    </div>
+                    <div class="pop_project">
+                        <div class="left">
+                            <img src="images/pop3.jpg" alt="#" class="pop_project_img">
+                        </div>
+                        <div class="right">
+                            <h4>Appliance repair</h4>
+                            <h5><i class="fa-solid fa-star"></i>4.8 <span>(113) </span>  From $120</h5>
+                        </div>
+                    </div>
+                    <div class="pop_project">
+                        <div class="left">
+                            <img src="images/pop4.jpg" alt="#" class="pop_project_img">
+                        </div>
+                        <div class="right">
+                            <h4>Gutter service</h4>
+                            <h5><i class="fa-solid fa-star"></i>5.0 <span>(73) </span>  From $390</h5>
+                        </div>
+                    </div>
+                    <div class="pop_project">
+                        <div class="left">
+                            <img src="images/1.jpg" alt="#" class="pop_project_img">
+                        </div>
+                        <div class="right">
+                            <h4>Home cleaning</h4>
+                            <h5><i class="fa-solid fa-star"></i>4.9 <span>(256) </span>  From $75</h5>
+                        </div>
+                    </div>
+                    <div class="pop_project">
+                        <div class="left">
+                            <img src="images/3.jpg" alt="#" class="pop_project_img">
+                        </div>
+                        <div class="right">
+                            <h4>Fence repair</h4>
+                            <h5><i class="fa-solid fa-star"></i>4.8 <span>(29) </span>  From $205</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="home_projects">
+            <div class="main_title">
+                <h2 class="title">Popular Home Projects</h2>
+                <a href="#" class="viewAll">View all</a>
+            </div>
+
+            <section class="projects">  
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project_header">
+                                    <div class="img_layout"></div>
+                                    <div class="img_wrapper">
+                                        <img src="images/1.jpg" alt="#" class="project_img">
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h3 class="project_title">One-time cleaning service</h3>
+                                </div>
+                    
+                                <div class="project_footer">
+                                    <div class="left">
+                                        <i class="fa-solid fa-star"></i>
+                                        <h4>4.9 <span>(256) </span>  From $80</h4>
+                                    </div>
+                                    <div class="right">
+                                        <button class="book_btn"><a>Book Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project_header">
+                                    <div class="img_layout"></div>
+                                    <img src="images/2.jpg" alt="#" class="project_img">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h3 class="project_title">Handyperson for small projects</h3>
+                                </div>
+                        
+                                <div class="project_footer">
+                                    <div class="left">
+                                        <i class="fa-solid fa-star"></i>
+                                        <h4>4.7 <span>(63) </span>  From $250</h4>
+                                    </div>
+                                    <div class="right">
+                                        <button class="book_btn"><a>Book Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project_header">
+                                    <div class="img_layout"></div>
+                                    <img src="images/3.jpg" alt="#" class="project_img">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h3 class="project_title">Fence installation & repair</h3>
+                                </div>
+                        
+                                <div class="project_footer">
+                                    <div class="left">
+                                        <i class="fa-solid fa-star"></i>
+                                        <h4>4.8 <span>(29) </span>  From $310</h4>
+                                    </div>
+                                    <div class="right">
+                                        <button class="book_btn"><a>Book Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project_header">
+                                    <div class="img_layout"></div>
+                                    <img src="images/imgi_20_02.jpg" alt="#" class="project_img">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h3 class="project_title">Professional Interior Designer</h3>
+                                </div>
+
+                                <div class="project_footer">
+                                    <div class="left">
+                                        <i class="fa-solid fa-star"></i>
+                                        <h4>4.9 <span>(112) </span> From $430</h4>
+                                    </div>
+                                    <div class="right">
+                                        <button class="book_btn"><a>Book Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project_header">
+                                    <div class="img_layout"></div>
+                                    <img src="images/imgi_21_01.jpg" alt="#" class="project_img">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h3 class="project_title">Landscape & Garden Expert</h3>
+                                </div>
+
+                                <div class="project_footer">
+                                    <div class="left">
+                                        <i class="fa-solid fa-star"></i>
+                                        <h4>4.8 <span>(89) </span> From $310</h4>
+                                    </div>
+                                    <div class="right">
+                                        <button class="book_btn"><a>Book Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project_header">
+                                    <div class="img_layout"></div>
+                                    <img src="images/imgi_22_08.jpg" alt="#" class="project_img">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <h3 class="project_title">Modern Kitchen Renovation</h3>
+                                </div>
+
+                                <div class="project_footer">
+                                    <div class="left">
+                                        <i class="fa-solid fa-star"></i>
+                                        <h4>4.6 <span>(74) </span> From $520</h4>
+                                    </div>
+                                    <div class="right">
+                                        <button class="book_btn"><a>Book Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+        </section>
+
+        <section class="expert_advice">
+            <div class="main_title">
+                <h2 class="title">Expert advice</h2>
+                <a href="#" class="viewAll">View all</a>
+            </div>
+
+            <section class="advices">
+                <article class="advice">
+                    <div class="left">
+                        <img src="images/ad1.jpg" alt="#" class="advice_img">
+                    </div>
+
+                    <div class="right">
+                        <div>Cleaning</div>
+                        <h3 class="advice_title">Expert advice from masters of cleanliness</h3>
+                        <p class="advice_text">Unlock the secrets to a spotless home with tips from cleaning professionals. From tackling stubborn...</p>
+                        <span class="date">Oct 19, 2024</span>
+                    </div>
+                </article>
+
+                <article class="advice">
+                    <div class="left">
+                        <img src="images/ad2.jpg" alt="#" class="advice_img">
+                    </div>
+
+                    <div class="right">
+                        <div>Flooring</div>
+                        <h3 class="advice_title">How to quickly clean laminate Flooring</h3>
+                        <p class="advice_text">Learn the fastest and most effective methods to clean laminate Flooring without damaging its surface...</p>
+                        <span class="date">Sep 13, 2024</span>
+                    </div>
+                </article>
+
+                <article class="advice">
+                    <div class="left">
+                        <img src="images/ad3.jpg" alt="#" class="advice_img">
+                    </div>
+
+                    <div class="right">
+                        <div>Air conditioning</div>
+                        <h3 class="advice_title">Choose air conditioner with air ionization</h3>
+                        <p class="advice_text">Explore the benefits of air conditioner with air ionization technology. Find out how these units improve air...</p>
+                        <span class="date">Sep 05, 2024</span>
+                    </div>
+                </article>
+
+                <article class="advice">
+                    <div class="left">
+                        <img src="images/ad4.jpg" alt="#" class="advice_img">
+                    </div>
+
+                    <div class="right">
+                        <div>Landscaping</div>
+                        <h3 class="advice_title">Landscaping ideas from top local experts</h3>
+                        <p class="advice_text">Get inspired by creative Landscaping ideas from the best local experts. Whether you're revamping your garden...</p>
+                        <span class="date">Aug 26, 2024</span>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="how_it_works">
+            <h2>How it works</h2>
+            <p>Effortlessly find, connect, and hire the perfect contractor for your job - all in just three easy steps.</p>
+            <div class="steps">
+                <div class="step">
+                    <img src="images/step1.svg" alt="#" class="step_img">
+                    <h3>Explore</h3>
+                    <p>Browse through our curated list of contractors.</p>
+                </div>
+                <div class="step">
+                    <img src="images/step2.svg" alt="#" class="step_img">
+                    <h3>Connect</h3>
+                    <p>Connect with them through our platform.</p>
+                </div>
+                <div class="step">
+                    <img src="images/step3.svg" alt="#" class="step_img">
+                    <h3>HGet qoutes and hire</h3>
+                    <p>Receive qoutes from interested contractors.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="business">
+            <div class="left">
+                <h3>Grow your business with us. Become a Pro today</h3>
+                <div class="buttons">
+                    <button class="red_button"><a href="#">+ Add business</a></button>
+                    <button class="learn_more"><a href="#">Learn more <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="images/business.jpg" alt="#" class="business_img">
+            </div>
+        </section>
+
+        <section class="app">
+            <div class="app_content">
+                <div class="left">
+                    <h3>Get Finder App</h3>
+                    <p>Explore top-rated certified pros</p>
+                    <div class="buttons">
+                        <button class="button"><i class="fa-solid fa-apple-whole"></i><a href="#">App Store</a></button>
+                        <button class="button"><a href="#"><img src="images/GooglePlayIcon.svg" alt="#"> Google Play</a></button>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="images/app.png" alt="#" class="app_img">
+                </div>
+        </section>
+
+        <section class="common_prices">
+            <div class="main_title">
+                <h2 class="title">Common pricing references</h2>
+                <a href="#" class="viewAll">View all</a>
+            </div>
+
+            <section class="prices">
+                <div class="price">
+                    <div class="left">
+                        <img src="images/price1.jpg" alt="#" class="price_img">
+                    </div>
+                    
+                    <div class="right">
+                        <div>
+                            <h3>installation of flat roofs</h3>
+                            <h4><i class="fa-solid fa-star"></i> 4.3 <span>(18) </span>  From $1,870</h4>
+                        </div>
+                        <button class="book_btn"><a>Book Now</a></button>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="left">
+                        <img src="images/price2.jpg" alt="#" class="price_img">
+                    </div>
+                    
+                    <div class="right">
+                        <div>
+                            <h3>installation of flat roofs</h3>
+                            <h4><i class="fa-solid fa-star"></i> 4.3 <span>(18) </span>  From $1,870</h4>
+                        </div>
+                        <button class="book_btn"><a>Book Now</a></button>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="left">
+                        <img src="images/3.jpg" alt="#" class="price_img">
+                    </div>
+                    
+                    <div class="right">
+                        <div>
+                            <h3>installation of flat roofs</h3>
+                            <h4><i class="fa-solid fa-star"></i> 4.3 <span>(18) </span>  From $1,870</h4>
+                        </div>
+                        <button class="book_btn"><a>Book Now</a></button>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="left">
+                        <img src="images/price4.jpg" alt="#" class="price_img">
+                    </div>
+                    
+                    <div class="right">
+                        <div>
+                            <h3>installation of flat roofs</h3>
+                            <h4><i class="fa-solid fa-star"></i> 4.3 <span>(18) </span>  From $1,870</h4>
+                        </div>
+                        <button class="book_btn"><a>Book Now</a></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer_header">
+            <div class="left">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Subscribe to our newsletter</h3>
+                <button class="red_button"><a href="">Subscribe</a></button>
+            </div>
+
+            <div class="right">
+                <span>need help?</span>
+                <a href="#">Contact us</a>
+            </div>
+        </section>
+           
+        <hr>
+
+        <section class="footer_content">
+            <div class="left">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.svg" class="logo_img">Finder</a>
+                </div>
+
+                <p class="footer_text">Connecting you with reliable local contractors for all your service needs.</p>
+
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="footer_links">
+                    <div class="links">
+                        <h4>Popular categories</h4>
+                        <ul class="categories">
+                            <li><a href="#">Cleaning</a></li>
+                            <li><a href="#">Handyperson</a></li>
+                            <li><a href="#">Roofing</a></li>
+                            <li><a href="#">Landscaping</a></li>
+                            <li><a href="#">Electrician</a></li>
+                            <li><a href="#">Plumbing</a></li>
+                            <li><a href="#">Pest control</a></li>
+                            <li><a href="#">Heating & furnace</a></li>
+                            <li><a href="#">Carpentry</a></li>
+                            <li><a href="#">Flooring</a></li>
+                            <li><a href="#">Concrete</a></li>
+                            <li><a href="#">Painting</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <h4>Company</h4>
+                        <ul class="company">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Press & announcements</a></li>
+                            <li><a href="#">Careers at Finder</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cities">
+            <div><h4>Top cities</h4></div>
+            <div>
+                <ul>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Los Angeles</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Houston</a></li>
+                <li><a href="#">Phoenix</a></li>
+                <li><a href="#">Philadelphia</a></li>
+                <li><a href="#">San Antonio</a></li>
+                <li><a href="#">San Diego</a></li>
+                <li><a href="#">Dallas</a></li>
+                <li><a href="#">San Jose</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="footer_info">
+            <div>
+                <p>&copy; 2024 Finder. All rights reserved.</p> 
+            </div>
+            <div class="payment_methods">
+                <img src="images/visa.svg" alt="#" class="payment_methods">
+                <img src="images/me2.svg" alt="#" class="ssl_secure">
+                <img src="images/paybal.svg" alt="#" class="verified">
+                <img src="images/pay.svg" alt="#" class="secure">
+                <img src="images/apple.svg" alt="#" class="ssl_secure">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src ="Js/script.js"></script>
+</body>
+</html>
