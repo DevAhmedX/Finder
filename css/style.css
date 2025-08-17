@@ -216,7 +216,7 @@ nav .icons {
 }
 
 .mobile-menu ul li a {
-  color: var(--nav-links-hover);
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
 }

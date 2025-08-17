@@ -42,6 +42,12 @@ closeBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
 
+document.body.addEventListener("mouseup", () => {
+  mobileMenu.classList.remove("active");
+  sidebarContent.classList.remove("open");
+  sidebarContent.classList.add("hidden");
+});
+
 //theme
 const theme = document.querySelector(".theme");
 let currentTheme = localStorage.getItem("site-theme") || "light";
@@ -57,6 +63,7 @@ function applyTheme(themeMode) {
     document.querySelector(".customize-btn").style.backgroundColor = "#111827";
     document.querySelector("#sidebarContent").style.backgroundColor = "#111827";
     document.querySelector(".toggle").style.backgroundColor = "#1d2735";
+    document.documentElement.style.setProperty("--nav-links-hover", "#4e5562");
     document
       .querySelectorAll(".color-code")
       .forEach((el) => (el.style.backgroundColor = "#1d2735"));
@@ -133,6 +140,7 @@ theme.addEventListener("click", (e) => {
   applyTheme(currentTheme === "light" ? "dark" : "light");
 });
 
+//customizeBtn
 const customizeBtn = document.getElementById("customize-btn");
 const sidebarContent = document.getElementById("sidebarContent");
 const close = document.getElementById("close-btn");
@@ -193,18 +201,18 @@ function darkenColor(hex, amount) {
 }
 
 //toggleBtn
-const toggleBtn = document.querySelector(".toggle-nav-btn");
-const navLinks = document.querySelector(".nav-links");
+// const toggleBtn = document.querySelector(".toggle-nav-btn");
+// const navLinks = document.querySelector(".nav-links");
 
-toggleBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("hide");
+// toggleBtn.addEventListener("click", () => {
+//   navLinks.classList.toggle("hide");
 
-  const icon = toggleBtn.querySelector("i");
-  if (navLinks.classList.contains("hide")) {
-    icon.classList.remove("fa-eye");
-    icon.classList.add("fa-eye-slash");
-  } else {
-    icon.classList.remove("fa-eye-slash");
-    icon.classList.add("fa-eye");
-  }
-});
+//   const icon = toggleBtn.querySelector("i");
+//   if (navLinks.classList.contains("hide")) {
+//     icon.classList.remove("fa-eye");
+//     icon.classList.add("fa-eye-slash");
+//   } else {
+//     icon.classList.remove("fa-eye-slash");
+//     icon.classList.add("fa-eye");
+//   }
+// });
